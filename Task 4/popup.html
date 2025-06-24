@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Productivity Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>Time Tracker</h2>
+      <div class="stats-summary">
+        <div class="stat-card productive">
+          <span class="stat-label">Productive</span>
+          <span class="stat-value" id="productive-time">0m</span>
+        </div>
+        <div class="stat-card unproductive">
+          <span class="stat-label">Unproductive</span>
+          <span class="stat-value" id="unproductive-time">0m</span>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <div class="sites-container">
+        <h3>Today's Activity</h3>
+        <div id="data"></div>
+      </div>
+    </main>
+
+    <footer>
+      <button id="reset-btn" class="reset-button">Reset Data</button>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
